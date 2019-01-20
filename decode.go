@@ -234,12 +234,13 @@ type decoder struct {
 }
 
 var (
-	mapItemType     = reflect.TypeOf(MapItem{})
-	durationType    = reflect.TypeOf(time.Duration(0))
-	defaultMapType  = reflect.TypeOf(map[interface{}]interface{}{})
-	ifaceType       = defaultMapType.Elem()
-	timeType        = reflect.TypeOf(time.Time{})
-	ptrTimeType     = reflect.TypeOf(&time.Time{})
+	mapItemType    = reflect.TypeOf(MapItem{})
+	durationType   = reflect.TypeOf(time.Duration(0))
+	defaultMapType = reflect.TypeOf(map[interface{}]interface{}{})
+	ifaceType      = defaultMapType.Elem()
+	timeType       = reflect.TypeOf(time.Time{})
+	ptrTimeType    = reflect.TypeOf(&time.Time{})
+
 	tagUnmarshalers = map[string]TagUnmarshaler{}
 )
 

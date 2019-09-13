@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	yaml "github.com/grahamjenson/go-yaml"
+	yaml "github.com/stilvoid/go-yaml"
 	. "gopkg.in/check.v1"
 )
 
